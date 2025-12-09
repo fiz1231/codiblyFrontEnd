@@ -26,7 +26,7 @@ export class Endpoint2 {
   loading = false;
   error: string | null = null;
 
-  private readonly baseUrl = 'https://codibly-1-z7h0.onrender.com/getLoadingWindow';
+  private readonly baseUrl = 'https://codibly-1-z7h0.onrender.com/v1/codibly/getLoadingWindow';
 
   constructor(private http: HttpClient) {}
 
