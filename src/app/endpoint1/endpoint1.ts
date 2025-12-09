@@ -33,7 +33,7 @@ export class Endpoint1 implements OnInit {
   loading = false;
   error: string | null = null;
 
-  private readonly apiUrl = 'http://localhost:8080/v1/codibly/getData';
+  private readonly apiUrl = 'https://codibly-1-z7h0.onrender.com/v1/codibly/getData';
 
   constructor(private http: HttpClient) {}
 
