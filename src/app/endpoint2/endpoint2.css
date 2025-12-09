@@ -1,0 +1,45 @@
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type='number'] {
+  width: 120px;
+  padding: 4px 8px;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 8px;
+  color: #555;
+}
+
+.error {
+  margin-top: 8px;
+  color: #b91c1c;
+}
+
+.result-card {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}

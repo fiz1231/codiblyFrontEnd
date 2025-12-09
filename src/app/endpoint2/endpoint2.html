@@ -1,0 +1,33 @@
+<div class="page">
+  <h1>{{ title }}</h1>
+
+  <div class="form">
+    <label for="windowHours">
+      Loading window (number):
+    </label>
+    <input
+      id="windowHours"
+      type="number"
+      [(ngModel)]="windowHours"
+      name="windowHours"
+      required
+    />
+
+    <button type="button" (click)="fetchWindow()">
+      Get loading window
+    </button>
+  </div>
+
+  <div class="info" *ngIf="loading">Loading...</div>
+  <div class="error" *ngIf="error">{{ error }}</div>
+
+  <div class="result-card" *ngIf="!loading && !error && result">
+    <h2>Result</h2>
+    <p><strong>From:</strong> {{ result.from }}</p>
+    <p><strong>To:</strong> {{ result.to }}</p>
+    <p>
+      <strong>Clean energy percent:</strong>
+      {{ result.cleanEnergyPercent | number : '1.0-2' }}%
+    </p>
+  </div>
+</div>
